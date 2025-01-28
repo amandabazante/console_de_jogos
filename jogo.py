@@ -97,7 +97,10 @@ Menu principal:
 0 - Sair
 ''')
 
-codigo_jogo = input("Qual jogo você deseja jogar? ")
+jogo_em_andamento = True
+
+while jogo_em_andamento:
+  codigo_jogo = input("Qual jogo você deseja jogar? ")
 
 if codigo_jogo == "1":
   jogar_adivinhacao()
