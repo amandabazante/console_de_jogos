@@ -100,18 +100,16 @@ Menu principal:
 jogo_em_andamento = True
 
 while jogo_em_andamento:
-  codigo_jogo = input("Qual jogo você deseja jogar? ")
+ codigo_jogo = input("Qual jogo você deseja jogar? ")
 
-if codigo_jogo == "1":
+ if codigo_jogo == "1":
   jogar_adivinhacao()
-elif codigo_jogo == "2":
+ elif codigo_jogo == "2":
   jogar_jokenpo()
-elif codigo_jogo == "3":
+ elif codigo_jogo == "3":
   jogar_quiz()
-elif codigo_jogo == "0":
+ elif codigo_jogo == "0":
   print("Programa encerrado! Até mais!")
-else: 
+  break
+ else: 
   print("Opção inválida")
-
-
-  
