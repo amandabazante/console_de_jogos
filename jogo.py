@@ -1,29 +1,3 @@
-def jogar_adivinhacao():
-    alvo = 25
-    chances = 5
-    acertou = False
-
-    while chances > 0 and not acertou:
-      try:
-        chute = int(input("Digite um número inteiro entre 0 e 100 - "))
-        chances-=1
-
-        if chute == alvo:
-            print("Parabéns! Adivinhou o número!")
-            acetou = True
-        else:
-            if chute > alvo:
-                print("Não acertou! O número é menor que o seu palpite")
-            else:
-                print("Não acertou! O número é maior que o seu palpite")
-            
-
-      except:
-        print("Tente Novamente!")
-
-    if not acertou:
-        print("Que pena, o número era - ", + alvo)
-
 def jogar_jokenpo():
     jogador1 = int(input("Jogador1, digite 0 p/pedra, 1 p/papel ou 2/tesoura: "))
     jogador2 = int(input("Jogador2, digite 0 p/pedra, 1 p/papel ou 2/tesoura: "))
@@ -110,6 +84,6 @@ while jogo_em_andamento:
   jogar_quiz()
  elif codigo_jogo == "0":
   print("Programa encerrado! Até mais!")
-  break
+  jogo_em_andamento = False
  else: 
   print("Opção inválida")
